@@ -1,11 +1,103 @@
 h1 {
   text-align: center; 
+  font-family: Courier New, monospace;
 }
 
 footer {
   text-align: center; 
+  font-family: Prata; 
 }
 
 h4 {
   text-align: center; 
+  font-family: Prata; 
 }
+
+img {
+  padding: 5px; 
+  margin: 10px; 
+}
+
+tr {
+  background-color: #f5d4cc; 
+  padding: 5px; 
+  margin: 5px; 
+  border: 3px; 
+  border-radius: 15px;
+}
+
+.container {
+  background-color: #ffe0ed; 
+  border-radius: 15px; 
+}
+
+p {
+  font-family: Prata; 
+  text-align: center;
+}
+
+footer {
+  font-family: Prata; 
+}
+
+#nav {
+  text-align: center; 
+  padding: 3px; 
+  background-color: lavender;
+  margin: 10px; 
+  font-size: 20px; 
+  border-radius: 15px; 
+  font-family: Courier New, monospace; 
+}
+
+li {
+  font-family: Prata; 
+}
+
+h6 {
+  font-family: Courier New, monospace; 
+}
+
+h5 {
+  font-family: Courier-New, monospace; 
+  font-weight: bold; 
+  text-align: center; 
+}
+
+#info {
+  text-align: left; 
+  background-color: antiquewhite; 
+  border-radius: 15px; 
+  padding: 5px; 
+  margin: 5px; 
+  font-family: Helvetica; 
+  font-size: 12px; 
+}
+
+td {
+  font-family: Prata; 
+  color: #745c49; 
+}
+
+thead {
+  font-family: Courier New, monospace; 
+  color: #b1487b; 
+}
+
+th {
+  font-family: Courier New, monospace; 
+  color: #a8488e; 
+}
+
+table {
+  margin: 5px; 
+  padding: 5px; 
+  border: 3px; 
+}
+
+ .title {
+   margin: 5px; 
+   padding: 5px; 
+   border-radius: 15px; 
+   background-color: lavender; 
+ }

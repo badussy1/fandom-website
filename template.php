@@ -6,7 +6,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Fandom Website</title>
+    <title>fandom website!</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/fan.css">
   </head>
@@ -20,23 +20,8 @@
   </div>
   <div class="row">
     <div class="col">
-  <a class="active" href="/index.php">HOME</a>
+  <?php echo $nav; ?>
 </div>
-    <div class="col">
-      <a href="/rules.php">RULES</a>
-    </div>
-     <div class="col">
-      <a href="/join.php">JOIN</a>
-    </div>
-     <div class="col">
-      <a href="/contactUs.php">CONTACT US</a>
-    </div>
-     <div class="col">
-      <a href="/learnFandom.php">LEARN THE LORE</a>
-    </div>
-    <div class="col">
-      <a href="/forum/forum.php">FORUM</a>
-    </div>
   </div>
 </div>
 </body>
@@ -54,7 +39,7 @@
   <div class="container">
   <div class="row m-2">
     <div class="col">
-      <p>THIS IS A FANDOM WEBSITE. ALL RIGHTS RESERVED. ALL ORIGINAL MATERIAL BELONGS TO THE ORIGINAL CREATORS. THIS WEBSITE FALLS UNDER FAIR USE, WHICH TAKES CONTENT AND IS ABLE TO MODIFY OR TRANSFORM IT FOR ENTERTAINMENT OR COMMENTARY PURPOSES. THANK YOU.</p>
+     <?php echo $footer; ?>
     </div>
   </div>
 </div>

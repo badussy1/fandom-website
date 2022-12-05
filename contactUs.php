@@ -32,7 +32,13 @@
       <a href="/contactUs.php">CONTACT US</a>
     </div>
      <div class="col">
-      <a href="/learnFandom.php">LEARN THE LORE</a>
+      <a href="/learnFandom.php">SCHEDULES</a>
+    </div>
+    <div class="col">
+      <a href="/media.php">MEDIA</a>
+    </div>
+    <div class="col">
+      <a href="/forum/forum.php">FORUM</a>
     </div>
   </div>
 </div>
@@ -42,7 +48,34 @@
     <div class="container"> 
       <div class="row m-3">
     <div class="col">
-  
+<p>Hello! If you would like to contact us for any reason, please let us know here by filling out the form. Thank you!</p>
+      <form method="post" action="/redirectContactUs.php">
+  <label for="fname">First name:</label>
+            <br>
+  <input type="text" name="fName" value=""><br>
+            <br>
+  <label for="lname">Last name:</label>
+            <br>
+  <input type="text" name="lName" value=""><br>
+            <br>
+  <label for="email">Email Address:</label>
+            <br>
+  <input type="text" name="email" value=""><br>
+            <br> 
+          <select name="reason">
+  <option value="question">Question</option>
+  <option value="comment">Comment</option>
+          </select>
+            <br>
+            <br>
+<label for="message">Message:</label>
+            <br>
+<textarea name="message" rows="2" cols="40">
+</textarea> 
+        <br>
+        <input type="submit" name="submit" value="submit"><br>
+      </form>    
+<p>Please do not spam our inbox. Our moderation team takes time to read every single message. Especially in the infancy of the website, please be extra sure to be careful on our moderation team, as the website mechanics are still a work in progress. Thank you :)</p>     
 </div>
     </div>
   </body>

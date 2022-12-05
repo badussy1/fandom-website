@@ -32,10 +32,13 @@
       <a href="/contactUs.php">CONTACT US</a>
     </div>
      <div class="col">
-      <a href="/learnFandom.php">LEARN THE LORE</a>
+      <a href="/learnFandom.php">SCHEDULES</a>
     </div>
     <div class="col">
-      <a href="/forum/forum.php">FORUM</a>
+      <a href="/forum/forumHome.php">FORUM</a>
+    </div>
+    <div class="col">
+      <a href="/media.php">MEDIA</a>
     </div>
   </div>
 </div>
@@ -45,50 +48,24 @@
     <div class="container"> 
       <div class="row m-3">
     <div class="col">
-      
-<form action="/redirectJoin.php" method="post">
-  <label for="fname">First name:</label>
-            <br>
-  <input type="text" name="fName" value=""><br>
-            <br>
-  <label for="lname">Last name:</label>
-            <br>
-  <input type="text" name="lName" value=""><br>
-            <br>
-  <label for="email">Email Address:</label>
-            <br>
-  <input type="text" name="email" value=""><br>
-            <br>
-  <label for="age">Age:</label>
-<input type="number" id="age" name="age" min="14" max="90">
-<!--   age if else statement -->
-  <?php 
-if ($age < 14) {
-  echo "i'm sorry. you are a bit too young to access our forums. please try again later."; 
-  unset($_SESSION['join']);
-} else {
-  echo "thank you! your age has been verified.";
+<?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    exit;
 }
-?>   
-<!--   end age checker -->
-  <br>
-  <br>
-  <label for="age">Create Password:</label>
-<input type="password" name="password" value="" minlength="8" required><br>
-<!--   password checker  -->
-<?php 
-if ($password == 8) {
-  echo "thank you! your password has been saved :)"; 
-} else {
-  echo "did you fulfill the 8 character requirement? your password was unable to be saved :(";
-}
-?>   
-<!--   end password checker -->
-  <br>
-  <br>
- <input type="submit">
-</form>
-      
+?>
+ 
+    <style>
+        body{ font: 14px sans-serif; text-align: center; }
+    </style>
+    <h1 class="my-5">Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to our site.</h1>
+    <p>
+        <a href="/signIn/resetPassword.php" class="btn btn-warning">Reset Your Password</a>
+        <a href="/signIn/logout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a>
+    </p>     
 </div>
     </div>
   </body>
